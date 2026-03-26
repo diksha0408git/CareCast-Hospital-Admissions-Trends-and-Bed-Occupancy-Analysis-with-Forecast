@@ -28,11 +28,13 @@ A standout feature of CareCast is the integration of an **LLM-powered conversati
 * **AI Integration:** Large Language Model (LLM) via API Key
 
 ## 🏗️ System Architecture & Data Flow
-![System Architecture Diagram](C:\Users\maazs\Downloads\DFD.png)
+![System Architecture Diagram](C:\Users\maazs\OneDrive\mypython\Desktop\Major_project\DFD.png)
 
 
 
+***
 🚀 Installation & Setup
+
 Follow these steps to run the CareCast Streamlit application on your local machine.
 
 1. Clone the Repository
