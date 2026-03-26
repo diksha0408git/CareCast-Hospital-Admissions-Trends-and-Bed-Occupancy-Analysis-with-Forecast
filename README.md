@@ -28,7 +28,7 @@ A standout feature of CareCast is the integration of an **LLM-powered conversati
 * **AI Integration:** Large Language Model (LLM) via API Key
 
 ## 🏗️ System Architecture & Data Flow
-![System Architecture Diagram](C:\Users\maazs\OneDrive\mypython\Desktop\Major_project\DFD.png)
+![System Architecture Diagram](images/DFD.png)
 
 
 
