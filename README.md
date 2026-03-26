@@ -28,42 +28,8 @@ A standout feature of CareCast is the integration of an **LLM-powered conversati
 * **AI Integration:** Large Language Model (LLM) via API Key
 
 ## 🏗️ System Architecture & Data Flow
-graph TD
-    %% Entities
-    Raw[(Raw CSV Data)]
-    DB[(SQLite Database)]
-    D2[(Forecast Data)]
-    User((Hospital Admin))
-    LLM{{LLM API}}
+![System Architecture Diagram](C:\Users\maazs\Downloads\DFD.png)
 
-    %% Processes (Using square brackets for safer GitHub rendering)
-    P1[1.0 Data Preprocessing]
-    P2[2.0 Database Mgmt]
-    P3[3.0 Exploratory Data Analysis]
-    P4[4.0 Time-Series Modeling]
-    P5[5.0 Visualization Engine]
-    P6[6.0 AI Chatbot Processing]
-
-    %% Data Flows
-    Raw -->|Uncleaned Data| P1
-    P1 -->|Cleaned Data| P2
-    P2 -->|Structured Data| DB
-    
-    DB -->|Historical Queries| P3
-    DB -->|Time-Series Data| P4
-    
-    P4 -->|Generated Predictions| D2
-    
-    P3 -->|Aggregated Metrics| P5
-    D2 -->|Forecast Visuals| P5
-    
-    P5 -->|Dashboards & UI| User
-    User -->|Adjust Filters| P5
-    User -->|Type Questions| P6
-    
-    P6 -->|Prompt + Context| LLM
-    LLM -->|AI Insight| P6
-    P6 -->|Display Answer| P5
 
 
 🚀 Installation & Setup
@@ -106,9 +72,9 @@ AI Chatbot Interaction: ![AI Chatbot](path/to/image3.png)
 👥 Team
 This project was collaboratively developed by:
 
-Insha Farhan - Dashboard Architecture, Time-Series Modeling, Streamlit Deployment, AI Integration.
+Insha Farhan - Dashboard Architecture, Time-Series Modeling, Streamlit Deployment, AI Integration, Documentation.
 
-Diksha Tiwari - Data Engineering, Preprocessing, Exploratory Data Analysis (EDA), Documentation.
+Diksha Tiwari - Data Engineering, Preprocessing, Exploratory Data Analysis (EDA), Streamlit Development.
 
 🔮 Future Scope
 Deployment of a consumer-facing public portal for real-time bed availability tracking.
