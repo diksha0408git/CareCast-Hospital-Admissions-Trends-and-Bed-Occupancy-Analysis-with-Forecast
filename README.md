@@ -28,25 +28,23 @@ A standout feature of CareCast is the integration of an **LLM-powered conversati
 * **AI Integration:** Large Language Model (LLM) via API Key
 
 ## 🏗️ System Architecture & Data Flow
-
-```mermaid
 graph TD
-    %% Entities & Stores
+    %% Entities
     Raw[(Raw CSV Data)]
-    DB[(D1: SQLite Database)]
-    D2[(D2: Forecast Data)]
+    DB[(SQLite Database)]
+    D2[(Forecast Data)]
     User((Hospital Admin))
-    LLM((LLM API))
+    LLM{{LLM API}}
 
-    %% Processes
-    P1(1.0 Data Preprocessing)
-    P2(2.0 Database Mgmt)
-    P3(3.0 Exploratory Data Analysis)
-    P4(4.0 Time-Series Modeling)
-    P5(5.0 Visualization Engine)
-    P6(6.0 AI Chatbot Processing)
+    %% Processes (Using square brackets for safer GitHub rendering)
+    P1[1.0 Data Preprocessing]
+    P2[2.0 Database Mgmt]
+    P3[3.0 Exploratory Data Analysis]
+    P4[4.0 Time-Series Modeling]
+    P5[5.0 Visualization Engine]
+    P6[6.0 AI Chatbot Processing]
 
-    %% Flows
+    %% Data Flows
     Raw -->|Uncleaned Data| P1
     P1 -->|Cleaned Data| P2
     P2 -->|Structured Data| DB
