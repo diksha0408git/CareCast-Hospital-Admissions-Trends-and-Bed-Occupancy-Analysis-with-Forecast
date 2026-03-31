@@ -91,8 +91,8 @@ If you find this project helpful, please consider giving it a ⭐!
 
 Let me know if you need to add any specific installation commands or file names to the setup section!
 
-Author:
-Insha Farhan 
+Contributed by:
+Insha Farhan and Diksha Tiwari
 
 
 
