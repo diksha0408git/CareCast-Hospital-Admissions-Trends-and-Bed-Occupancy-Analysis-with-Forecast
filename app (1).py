@@ -34,7 +34,7 @@ if "messages" not in st.session_state:
 # GEMINI API CONFIG 
 
 try:
-    genai.configure(api_key=st.secrets.get("GEMINI_API_KEY", ""))
+    genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
     
     # 1. Ask Google's servers for every model your key is allowed to use
     available_models = [m.name for m in genai.list_models() if 'generateContent' in m.supported_generation_methods]
